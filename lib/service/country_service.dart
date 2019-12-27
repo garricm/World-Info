@@ -19,7 +19,6 @@ class CountryService {
   }
 
   static List<Country> parseCountryList(String responseBody) {
-    print(responseBody);
     final parsed = json.decode(responseBody).cast<Map<String, dynamic>>();
     return parsed.map<Country>((json) => Country.fromJson(json)).toList();
   }

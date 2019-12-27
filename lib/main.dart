@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       },
       title: 'World Info',
       theme: new ThemeData(
-          primaryColor: Color.fromRGBO(58, 66, 86, 1.0), fontFamily: 'Roboto'),
+          primaryColor: Color.fromRGBO(58, 66, 86, 1.0), fontFamily: 'Raleway'),
     );
   }
 }

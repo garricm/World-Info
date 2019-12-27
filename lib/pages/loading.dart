@@ -17,7 +17,6 @@ class _LoadingState extends State<Loading> {
     super.initState();
 
     CountryService.getCountryList().then((countryList) {
-      print(countryList);
       Navigator.pushReplacementNamed(context, '/home',
           arguments: {'list': countryList});
     });

@@ -44,10 +44,6 @@ flutter:
   # the material Icons class.
   uses-material-design: true
 
-  assets:
-    - drive-steering-wheel.jpg
-    - line.png
-
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 
@@ -64,6 +60,11 @@ flutter:
       fonts:
         - asset: fonts/Roboto-Regular.ttf
         - asset: fonts/Roboto-Thin.ttf
+          style: normal
+    - family: Raleway
+      fonts:
+        - asset: fonts/Raleway-Regular.ttf
+        - asset: fonts/Raleway-Thin.ttf
           style: normal
   #
   # For details regarding fonts from package dependencies,

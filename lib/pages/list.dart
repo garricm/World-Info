@@ -25,10 +25,9 @@ class _ListPageState extends State<ListPage> {
     data = data.isNotEmpty ? data : ModalRoute.of(context).settings.arguments;
     countries = data['list'];
 
-    ListTile makeListTile(Country country) =>
-        ListTile(
+    ListTile makeListTile(Country country) => ListTile(
           contentPadding:
-          EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0),
+              EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0),
           leading: Container(
               padding: EdgeInsets.only(top: 12.0),
               child: Text(
@@ -45,10 +44,10 @@ class _ListPageState extends State<ListPage> {
                 fontWeight: FontWeight.bold,
                 letterSpacing: 1.5),
           ),
-          subtitle: Text(
-              country.capital, style: TextStyle(color: Colors.white70)),
+          subtitle:
+              Text(country.capital, style: TextStyle(color: Colors.white70)),
           trailing:
-          Icon(Icons.keyboard_arrow_right, color: Colors.white, size: 30.0),
+              Icon(Icons.keyboard_arrow_right, color: Colors.white, size: 30.0),
           onTap: () {
             Navigator.push(
                 context,
@@ -57,8 +56,7 @@ class _ListPageState extends State<ListPage> {
           },
         );
 
-    Card makeCard(Country country) =>
-        Card(
+    Card makeCard(Country country) => Card(
           elevation: 8.0,
           margin: new EdgeInsets.symmetric(horizontal: 10.0, vertical: 6.0),
           child: Container(
@@ -113,7 +111,7 @@ class _ListPageState extends State<ListPage> {
         IconButton(
           icon: Icon(Icons.list),
           onPressed: () {},
-        )
+        ),
       ],
     );
 
@@ -121,7 +119,7 @@ class _ListPageState extends State<ListPage> {
       backgroundColor: Color.fromRGBO(58, 66, 86, 1.0),
       appBar: topAppBar,
       body: makeBody,
-      bottomNavigationBar: makeBottom,
+      //bottomNavigationBar: makeBottom,
     );
   }
 }
