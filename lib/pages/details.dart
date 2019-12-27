@@ -49,7 +49,7 @@ class DetailPage extends StatelessWidget {
               )),
               Card(
                   child: ListTile(
-                title: Text('Capital : ' + country.code,
+                title: Text('Capital : ' + country.capital,
                     style: new TextStyle(fontWeight: FontWeight.bold)),
               )),
               Card(
