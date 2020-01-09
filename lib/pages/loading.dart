@@ -3,7 +3,6 @@ import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:world_info/pages/country.dart';
 import 'package:world_info/service/country_service.dart';
 
-
 class Loading extends StatefulWidget {
   @override
   _LoadingState createState() => _LoadingState();
@@ -17,8 +16,10 @@ class _LoadingState extends State<Loading> {
     super.initState();
 
     CountryService.getCountryList().then((countryList) {
-      Navigator.pushReplacementNamed(context, '/home',
-          arguments: {'list': countryList});
+      if (countryList != null) {
+        Navigator.pushReplacementNamed(context, '/home',
+            arguments: {'list': countryList});
+      }
     });
   }
 
